@@ -120,3 +120,96 @@
 @import "07-utilities/color-palette";
 @import "07-utilities/measure";
 @import "07-utilities/ie";
+
+.left-column-deco{
+    position: fixed;
+    width: 0;
+    height: 100%;
+    left: -80px;
+    top: 0;
+    display: block;
+    .home &{
+        @include media(mobile) {
+           left: 0;
+        }
+    }
+    &:before, &:after{
+        content: "";
+        display: block;
+        width: 227px;
+        height: 100%;
+        position: absolute;
+        left: -120px;
+        top: 0;
+        background: var(--global--color-red);
+        transform: skewX( -7deg);
+        transform-origin: 50% 50%;
+        opacity: 0.92;
+        z-index: 2;
+        .home &{
+            @include media(desktop) {
+                width: 315px;
+            }
+            @include media(wide) {
+                width: 415px;
+            }
+            @include media(xwide) {
+                width: 515px;
+            }
+            @include media(xxwide) {
+                width: 615px;
+            }
+        }
+    }
+    &:after{
+        background: var(--global--color-blue);
+        transform: skewX( 7deg);
+        z-index: 1;
+    }
+    &__circle-deco{
+        display: block;
+        background-color: var(--global--color-white);
+        position: absolute;
+        width: 50vh;
+        height: 50vh;
+        left: 50%;
+        top: 50%;
+        border-radius: 100%;
+        @include media(mobile) {
+            transform: translate(-25%, -50%);
+        }
+        @include media(desktop) {
+            width: 100vh;
+            height: 100vh;
+        }    
+        @include media(wide) {
+            transform: translate(-25%, -50%);
+        }    
+        @include media(xwide) {
+            transform: translate(-5%, -50%);
+        }    
+        @include media(xxwide) {
+            transform: translate(5%, -50%);
+        }    
+    }
+}
+.site-content{
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 80px;
+    padding-right: 15px;
+    .home &{
+        @include media(mobile) {
+            padding-left: 290px;
+        }
+        @include media(desktop) {
+            padding-left: 450px;
+        }
+    }
+}
+.widget-area{
+    position: relative;
+}
+.site-footer{
+    position: relative;
+}

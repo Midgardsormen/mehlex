@@ -13,6 +13,8 @@ $breakpoint_md: 592px;
 $breakpoint_lg: 652px;
 $breakpoint_xl: 822px;
 $breakpoint_xxl: 1024px;
+$breakpoint_xxxl: 1410px;
+$breakpoint_xxxxl: 1610px;
 
 // Responsive breakpoints mixin
 @mixin media( $res ) {
@@ -73,6 +75,28 @@ $breakpoint_xxl: 1024px;
 
 	@if wide == $res {
 		@media only screen and (min-width: #{$breakpoint_xxl}) {
+			@content;
+		}
+	}
+	@if xwide-only == $res {
+		@media only screen and (max-width: #{$breakpoint_xxxl - 1}) {
+			@content;
+		}
+	}
+
+	@if xwide == $res {
+		@media only screen and (min-width: #{$breakpoint_xxxl}) {
+			@content;
+		}
+	}
+	@if xxwide-only == $res {
+		@media only screen and (max-width: #{$breakpoint_xxxxl - 1}) {
+			@content;
+		}
+	}
+
+	@if xxwide == $res {
+		@media only screen and (min-width: #{$breakpoint_xxxxl}) {
 			@content;
 		}
 	}

@@ -415,7 +415,7 @@ a:hover {
 }
 
 .wp-block-button__link:not(:hover):not(:active):not(.has-text-color) {
-	color: #d1e4dd;
+	color: #f9f3f3;
 }
 
 .has-background .wp-block-button__link:not(:hover):not(:active):not(.has-text-color) {
@@ -469,11 +469,11 @@ a:hover {
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(:hover):not(:active):not(.has-text-color) {
-	color: #d1e4dd;
+	color: #f9f3f3;
 }
 
 .has-background .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(:hover):not(:active):not(.has-text-color) {
-	color: #d1e4dd;
+	color: #f9f3f3;
 }
 
 .has-background .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(:hover):not(:active):not(.has-text-color).has-background {
@@ -525,31 +525,31 @@ a:hover {
 .wp-block-button.is-style-outline .wp-block-button__link:hover {
 	background-color: #28303d !important;
 	border-color: transparent !important;
-	color: #d1e4dd !important;
+	color: #f9f3f3 !important;
 }
 
 .wp-block-button.is-style-outline .wp-block-button__link:active {
 	background-color: #28303d !important;
 	border-color: transparent !important;
-	color: #d1e4dd !important;
+	color: #f9f3f3 !important;
 }
 
 .has-background .wp-block-button.is-style-outline .wp-block-button__link:hover {
 	background-color: #28303d !important;
-	color: #d1e4dd !important;
+	color: #f9f3f3 !important;
 }
 
 .has-background .wp-block-button.is-style-outline .wp-block-button__link:active {
 	background-color: #28303d !important;
-	color: #d1e4dd !important;
+	color: #f9f3f3 !important;
 }
 
 .has-text-color .wp-block-button.is-style-outline .wp-block-button__link:hover {
-	color: #d1e4dd !important;
+	color: #f9f3f3 !important;
 }
 
 .has-text-color .wp-block-button.is-style-outline .wp-block-button__link:active {
-	color: #d1e4dd !important;
+	color: #f9f3f3 !important;
 }
 
 .wp-block-button.is-style-outline .wp-block-button__link:focus {
@@ -716,6 +716,7 @@ a:hover {
 	max-width: inherit;
 	text-align: inherit;
 }
+
 @media only screen and (min-width: 652px) {
 
 	.wp-block-cover h2 {
@@ -731,6 +732,7 @@ a:hover {
 	max-width: inherit;
 	text-align: inherit;
 }
+
 @media only screen and (min-width: 652px) {
 
 	.wp-block-cover-image h2 {
@@ -796,52 +798,52 @@ a:hover {
 	}
 
 	.wp-block-columns.is-style-twentytwentyone-columns-overlap .wp-block-column:nth-child(2n) > p:not(.has-background) {
-		background-color: #d1e4dd;
+		background-color: #f9f3f3;
 		padding: 20px;
 	}
 
 	.wp-block-columns.is-style-twentytwentyone-columns-overlap .wp-block-column:nth-child(2n) > h1:not(.has-background) {
-		background-color: #d1e4dd;
+		background-color: #f9f3f3;
 		padding: 20px;
 	}
 
 	.wp-block-columns.is-style-twentytwentyone-columns-overlap .wp-block-column:nth-child(2n) > h2:not(.has-background) {
-		background-color: #d1e4dd;
+		background-color: #f9f3f3;
 		padding: 20px;
 	}
 
 	.wp-block-columns.is-style-twentytwentyone-columns-overlap .wp-block-column:nth-child(2n) > h3:not(.has-background) {
-		background-color: #d1e4dd;
+		background-color: #f9f3f3;
 		padding: 20px;
 	}
 
 	.wp-block-columns.is-style-twentytwentyone-columns-overlap .wp-block-column:nth-child(2n) > h4:not(.has-background) {
-		background-color: #d1e4dd;
+		background-color: #f9f3f3;
 		padding: 20px;
 	}
 
 	.wp-block-columns.is-style-twentytwentyone-columns-overlap .wp-block-column:nth-child(2n) > h5:not(.has-background) {
-		background-color: #d1e4dd;
+		background-color: #f9f3f3;
 		padding: 20px;
 	}
 
 	.wp-block-columns.is-style-twentytwentyone-columns-overlap .wp-block-column:nth-child(2n) > h6:not(.has-background) {
-		background-color: #d1e4dd;
+		background-color: #f9f3f3;
 		padding: 20px;
 	}
 
 	.wp-block-columns.is-style-twentytwentyone-columns-overlap .wp-block-column:nth-child(2n) > ul:not(.has-background) {
-		background-color: #d1e4dd;
+		background-color: #f9f3f3;
 		padding: 20px;
 	}
 
 	.wp-block-columns.is-style-twentytwentyone-columns-overlap .wp-block-column:nth-child(2n) > ol:not(.has-background) {
-		background-color: #d1e4dd;
+		background-color: #f9f3f3;
 		padding: 20px;
 	}
 
 	.wp-block-columns.is-style-twentytwentyone-columns-overlap .wp-block-column:nth-child(2n) > pre:not(.has-background) {
-		background-color: #d1e4dd;
+		background-color: #f9f3f3;
 		padding: 20px;
 	}
 
@@ -918,7 +920,7 @@ a:hover {
 }
 
 .wp-block-file .wp-block-file__button:not(:hover):not(:active):not(.has-text-color) {
-	color: #d1e4dd;
+	color: #f9f3f3;
 }
 
 .has-background .wp-block-file .wp-block-file__button:not(:hover):not(:active):not(.has-text-color) {
@@ -1534,6 +1536,7 @@ h6 {
 	line-height: 1.3;
 	margin-bottom: 10px;
 }
+
 @media only screen and (min-width: 652px) {
 
 	.wp-block-latest-posts > li > a {
@@ -1755,7 +1758,7 @@ dt {
 }
 
 .wp-block-navigation .wp-block-navigation__container {
-	background: #d1e4dd;
+	background: #f9f3f3;
 	padding: 0;
 }
 
@@ -1830,6 +1833,7 @@ pre.wp-block-preformatted {
 	line-height: 1.3;
 	margin: 0;
 }
+
 @media only screen and (min-width: 652px) {
 
 	.wp-block-pullquote p {
@@ -1902,6 +1906,7 @@ pre.wp-block-preformatted {
 .wp-block-pullquote.is-style-solid-color blockquote p {
 	font-size: 2rem;
 }
+
 @media only screen and (min-width: 652px) {
 
 	.wp-block-pullquote.is-style-solid-color blockquote p {
@@ -2022,6 +2027,7 @@ pre.wp-block-preformatted {
 	font-style: normal;
 	line-height: 1.35;
 }
+
 @media only screen and (min-width: 652px) {
 
 	.wp-block-quote.is-large p {
@@ -2034,6 +2040,7 @@ pre.wp-block-preformatted {
 	font-style: normal;
 	line-height: 1.35;
 }
+
 @media only screen and (min-width: 652px) {
 
 	.wp-block-quote.is-style-large p {
@@ -2046,6 +2053,7 @@ pre.wp-block-preformatted {
 	line-height: 1.35;
 	left: -25px;
 }
+
 @media only screen and (min-width: 652px) {
 
 	.wp-block-quote.is-large:before {
@@ -2058,6 +2066,7 @@ pre.wp-block-preformatted {
 	line-height: 1.35;
 	left: -25px;
 }
+
 @media only screen and (min-width: 652px) {
 
 	.wp-block-quote.is-style-large:before {
@@ -2077,6 +2086,7 @@ pre.wp-block-preformatted {
 	line-height: 1.35;
 	margin-right: 10px;
 }
+
 @media only screen and (min-width: 652px) {
 
 	.wp-block-quote.is-large.has-text-align-right p:before {
@@ -2091,6 +2101,7 @@ pre.wp-block-preformatted {
 	line-height: 1.35;
 	margin-right: 10px;
 }
+
 @media only screen and (min-width: 652px) {
 
 	.wp-block-quote.is-style-large.has-text-align-right p:before {
@@ -2225,6 +2236,7 @@ pre.wp-block-preformatted {
 	line-height: 1.3;
 	margin-bottom: 10px;
 }
+
 @media only screen and (min-width: 652px) {
 
 	.wp-block-rss .wp-block-rss__item-title > a {
@@ -2351,7 +2363,7 @@ pre.wp-block-preformatted {
 }
 
 .wp-block-search .wp-block-search__button.wp-block-search__button:not(:hover):not(:active):not(.has-text-color) {
-	color: #d1e4dd;
+	color: #f9f3f3;
 }
 
 .has-background .wp-block-search .wp-block-search__button.wp-block-search__button:not(:hover):not(:active):not(.has-text-color) {
@@ -2399,12 +2411,12 @@ pre.wp-block-preformatted {
 }
 
 .has-background .wp-block-search .wp-block-search__button.wp-block-search__button:hover {
-	background-color: #d1e4dd !important;
+	background-color: #f9f3f3 !important;
 	color: #28303d !important;
 }
 
 .has-background .wp-block-search .wp-block-search__button.wp-block-search__button:active {
-	background-color: #d1e4dd !important;
+	background-color: #f9f3f3 !important;
 	color: #28303d !important;
 }
 
@@ -2498,12 +2510,14 @@ hr[style*="text-align: right"] {
 .wp-block-separator:not(.is-style-dots) {
 	max-width: calc(100vw - 30px);
 }
+
 @media only screen and (min-width: 482px) {
 
 	.wp-block-separator:not(.is-style-dots) {
 		max-width: min(calc(100vw - 100px), 610px);
 	}
 }
+
 @media only screen and (min-width: 822px) {
 
 	.wp-block-separator:not(.is-style-dots) {
@@ -2514,12 +2528,14 @@ hr[style*="text-align: right"] {
 hr:not(.is-style-dots) {
 	max-width: calc(100vw - 30px);
 }
+
 @media only screen and (min-width: 482px) {
 
 	hr:not(.is-style-dots) {
 		max-width: min(calc(100vw - 100px), 610px);
 	}
 }
+
 @media only screen and (min-width: 822px) {
 
 	hr:not(.is-style-dots) {
@@ -2798,6 +2814,7 @@ pre.wp-block-verse {
 	font-size: 2.5rem;
 	line-height: 1.3;
 }
+
 @media only screen and (min-width: 652px) {
 
 	:root .is-larger-text {
@@ -2809,6 +2826,7 @@ pre.wp-block-verse {
 	font-size: 2.5rem;
 	line-height: 1.3;
 }
+
 @media only screen and (min-width: 652px) {
 
 	:root .has-larger-font-size {
@@ -2820,6 +2838,7 @@ pre.wp-block-verse {
 	font-size: 2.5rem;
 	line-height: 1.3;
 }
+
 @media only screen and (min-width: 652px) {
 
 	:root .is-extra-large-text {
@@ -2831,6 +2850,7 @@ pre.wp-block-verse {
 	font-size: 2.5rem;
 	line-height: 1.3;
 }
+
 @media only screen and (min-width: 652px) {
 
 	:root .has-extra-large-font-size {
@@ -2843,6 +2863,7 @@ pre.wp-block-verse {
 	line-height: 1.3;
 	font-weight: 300;
 }
+
 @media only screen and (min-width: 652px) {
 
 	:root .is-huge-text {
@@ -2855,6 +2876,7 @@ pre.wp-block-verse {
 	line-height: 1.3;
 	font-weight: 300;
 }
+
 @media only screen and (min-width: 652px) {
 
 	:root .has-huge-font-size {
@@ -2867,6 +2889,7 @@ pre.wp-block-verse {
 	line-height: 1.3;
 	font-weight: 300;
 }
+
 @media only screen and (min-width: 652px) {
 
 	:root .is-gigantic-text {
@@ -2879,6 +2902,7 @@ pre.wp-block-verse {
 	line-height: 1.3;
 	font-weight: 300;
 }
+
 @media only screen and (min-width: 652px) {
 
 	:root .has-gigantic-font-size {
@@ -2916,6 +2940,7 @@ pre.wp-block-verse {
 	font-weight: 300;
 	line-height: 1.1;
 }
+
 @media only screen and (min-width: 652px) {
 
 	.wp-block.editor-post-title__block .editor-post-title__input {
@@ -2938,12 +2963,12 @@ pre.wp-block-verse {
 
 .has-primary-background-color[class] {
 	background-color: #28303d;
-	color: #d1e4dd;
+	color: #f9f3f3;
 }
 
 .has-secondary-background-color[class] {
 	background-color: #39414d;
-	color: #d1e4dd;
+	color: #f9f3f3;
 }
 
 .has-white-background-color[class] {
@@ -2980,12 +3005,14 @@ pre.wp-block-verse {
 .wp-block[data-align=wide] {
 	max-width: calc(100vw - 30px);
 }
+
 @media only screen and (min-width: 482px) {
 
 	.wp-block[data-align=wide] {
 		max-width: calc(100vw - 100px);
 	}
 }
+
 @media only screen and (min-width: 822px) {
 
 	.wp-block[data-align=wide] {
@@ -2996,12 +3023,14 @@ pre.wp-block-verse {
 .wp-block.alignwide {
 	max-width: calc(100vw - 30px);
 }
+
 @media only screen and (min-width: 482px) {
 
 	.wp-block.alignwide {
 		max-width: calc(100vw - 100px);
 	}
 }
+
 @media only screen and (min-width: 822px) {
 
 	.wp-block.alignwide {
@@ -3070,7 +3099,7 @@ html {
 
 body {
 	color: #28303d;
-	background-color: #d1e4dd;
+	background-color: #f9f3f3;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 1.25rem;
 	font-weight: normal;
@@ -3137,11 +3166,11 @@ a {
 }
 
 .has-blue-color[class] {
-	color: #d1dfe4;
+	color: #589ce7;
 }
 
 .has-blue-color[class] > [class*=__inner-container] {
-	color: #d1dfe4;
+	color: #589ce7;
 }
 
 .has-purple-color[class] {
@@ -3153,11 +3182,11 @@ a {
 }
 
 .has-red-color[class] {
-	color: #e4d1d1;
+	color: #db6063;
 }
 
 .has-red-color[class] > [class*=__inner-container] {
-	color: #e4d1d1;
+	color: #db6063;
 }
 
 .has-orange-color[class] {
@@ -3236,11 +3265,11 @@ a {
 }
 
 .has-blue-background-color[class] {
-	background-color: #d1dfe4;
+	background-color: #589ce7;
 }
 
 .has-blue-background-color[class] > [class*=__inner-container] {
-	background-color: #d1dfe4;
+	background-color: #589ce7;
 }
 
 .has-purple-background-color[class] {
@@ -3252,11 +3281,11 @@ a {
 }
 
 .has-red-background-color[class] {
-	background-color: #e4d1d1;
+	background-color: #db6063;
 }
 
 .has-red-background-color[class] > [class*=__inner-container] {
-	background-color: #e4d1d1;
+	background-color: #db6063;
 }
 
 .has-orange-background-color[class] {
@@ -3380,17 +3409,17 @@ a {
 }
 
 .has-red-to-yellow-gradient-background {
-	background: linear-gradient(160deg, #e4d1d1, #eeeadd);
+	background: linear-gradient(160deg, #db6063, #eeeadd);
 }
 
 .has-yellow-to-red-gradient-background {
-	background: linear-gradient(160deg, #eeeadd, #e4d1d1);
+	background: linear-gradient(160deg, #eeeadd, #db6063);
 }
 
 .has-purple-to-red-gradient-background {
-	background: linear-gradient(160deg, #d1d1e4, #e4d1d1);
+	background: linear-gradient(160deg, #d1d1e4, #db6063);
 }
 
 .has-red-to-purple-gradient-background {
-	background: linear-gradient(160deg, #e4d1d1, #d1d1e4);
+	background: linear-gradient(160deg, #db6063, #d1d1e4);
 }

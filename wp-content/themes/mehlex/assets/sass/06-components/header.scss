@@ -23,13 +23,49 @@
 .site-branding {
 	color: var(--branding--color-text);
 	margin-right: 140px;
-
+	position: relative;
+	text-align: center;
+	z-index: 2;
+	width: 15vh;
+	.home &{
+		width: initial;
+		@include media(mobile) {
+			width: 25vh;
+			position: fixed;
+			top: 50%;
+			left: 0;
+			transform: translate(0, -50%);
+		}
+		@include media(desktop) {
+			width: 310px;
+			left: 35px;
+		}
+		@include media(wide) {
+			width: 310px;
+			left: 135px;
+		}
+		@include media(xwide) {
+			width: 310px;
+			left: 235px;
+		}
+		@include media(xxwide) {
+			width: 320px;
+			left: 335px;
+		}
+	}
 	&:last-child {
 		margin-right: 0;
 		width: 100%;
 		text-align: center;
 	}
+	.csl-logo-block {
+		background: var(--global--color-white);
+		border-radius: 100%;
+		padding: 15px;
+		position: relative;
+		z-index: 5;
 
+	}
 	@include media(mobile) {
 		margin-right: initial;
 		margin-top: 4px; // Align the baseline of the site title with the primary menu

@@ -19,7 +19,7 @@ $header_class = $show_title ? 'site-title' : 'screen-reader-text';
 <?php endif; ?>
 
 <div class="site-branding">
-
+<?php echo csl_CustomSiteLogo_show_logo(); ?>
 	<?php if ( has_custom_logo() && ! $show_title ) : ?>
 		<div class="site-logo"><?php the_custom_logo(); ?></div>
 	<?php endif; ?>

@@ -68,7 +68,7 @@
 	.primary-navigation-open & {
 		width: 100%;
 		z-index: 500;
-		background-color: var(--global--color-background);
+		background-color: var(--global--color-blue);
 
 		#primary-mobile-menu {
 			position: static;
@@ -144,6 +144,7 @@
 			visibility: visible;
 			opacity: 1;
 			transform: translateY(0);
+			background-color: var(--global--color-blue);
 		}
 	}
 
@@ -357,6 +358,12 @@
 	}
 
 	.primary-menu-container {
+		a{
+			.primary-navigation-open & {
+				color: var(--global--color-white);	
+			}
+			
+		}
 		@include media(mobile) {
 			// Better align with the site title when the menu wraps.
 			margin-right: calc(0px - var(--primary-nav--padding));

@@ -213,3 +213,80 @@
 .site-footer{
     position: relative;
 }
+.home{
+    .home-text{
+        line-height: 1.2;
+        font-family: var(--custom--font-primary);
+        color: var(--global--color-blue);
+        margin: 0 0.25rem;
+        &--container{
+            max-width: none!important;
+        }
+        &--text-1 {
+            display: block;
+            font-size: 4vh;
+            transform: rotate( -4deg);
+        }
+        &--text-2 {
+            display: block;
+            font-size: 9vh;
+            transform: rotate( 0deg);
+            
+            &:before,&::after{
+                content: "";vertical-align: middle;
+                width: 12px;
+                height: 12px;
+                background-color: var(--global--color-red);
+                border-radius: 100%;
+                display: inline-block;
+                margin: 0 10px;
+            }
+            &:before{
+                margin-top: 25px;
+            }
+            &:after{
+                margin-bottom: 25px;
+            }
+        }
+        &--text-3 {
+            display: inline-block;
+            font-size: 4vh;
+            transform: rotate( -2deg);
+            margin-left: 2rem;
+        }
+        &--text-4 {
+            display: inline-block;
+            font-size: 4vh;
+            transform: rotate( 2deg);
+        }
+        &--text-5 {
+            display: block;
+            font-size: 4.5vh;
+            transform-origin: 50%;
+            transform: rotate( 2deg);
+            line-height: 1;
+            margin-top: 0.5rem;
+        }
+        &--text-6 {
+            display: block;
+            font-size: 4vh;
+            transform-origin: 50%;
+            transform: rotate( -1deg);
+            line-height: 1;
+            margin-top: 0.25rem;
+        }
+        &--text-7 {
+            display: block;
+            font-size: 11vh;
+            transform-origin: 50%;
+            transform: rotate( -1deg);
+            line-height: 1;
+            margin-top: 0.25rem;
+        }
+        &--text-8 {
+            color: var(--global--color-red);
+        }
+
+    }
+
+}

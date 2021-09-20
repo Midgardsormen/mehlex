@@ -96,6 +96,7 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
  */
 
 /* Categories 01 to 03 are the basics. */
+@import url("https://fonts.googleapis.com/css2?family=Mansalva&display=swap");
 
 /* Variables */
 :root {
@@ -5412,21 +5413,21 @@ table.wp-calendar-table caption {
 
 	.home .site-branding {
 		width: 310px;
-		left: 37px;
+		left: 35px;
 	}
 }
 @media only screen and (min-width: 1024px) {
 
 	.home .site-branding {
 		width: 310px;
-		left: 137px;
+		left: 135px;
 	}
 }
 @media only screen and (min-width: 1410px) {
 
 	.home .site-branding {
 		width: 310px;
-		left: 37px;
+		left: 235px;
 	}
 }
 @media only screen and (min-width: 1610px) {
@@ -8120,4 +8121,101 @@ footer {
 
 .site-footer {
 	position: relative;
+}
+
+.home .home-text {
+	line-height: 1.2;
+	font-family: "Mansalva", cursive;
+	color: #589ce7;
+	margin: 0 0.25rem;
+}
+
+.home .home-text--container {
+	max-width: none !important;
+}
+
+.home .home-text--text-1 {
+	display: block;
+	font-size: 4vh;
+	transform: rotate(-4deg);
+}
+
+.home .home-text--text-2 {
+	display: block;
+	font-size: 9vh;
+	transform: rotate(0deg);
+}
+
+.home .home-text--text-2:before {
+	content: "";
+	vertical-align: middle;
+	width: 12px;
+	height: 12px;
+	background-color: #db6063;
+	border-radius: 100%;
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.home .home-text--text-2::after {
+	content: "";
+	vertical-align: middle;
+	width: 12px;
+	height: 12px;
+	background-color: #db6063;
+	border-radius: 100%;
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.home .home-text--text-2:before {
+	margin-top: 25px;
+}
+
+.home .home-text--text-2:after {
+	margin-bottom: 25px;
+}
+
+.home .home-text--text-3 {
+	display: inline-block;
+	font-size: 4vh;
+	transform: rotate(-2deg);
+	margin-left: 2rem;
+}
+
+.home .home-text--text-4 {
+	display: inline-block;
+	font-size: 4vh;
+	transform: rotate(2deg);
+}
+
+.home .home-text--text-5 {
+	display: block;
+	font-size: 4.5vh;
+	transform-origin: 50%;
+	transform: rotate(2deg);
+	line-height: 1;
+	margin-top: 0.5rem;
+}
+
+.home .home-text--text-6 {
+	display: block;
+	font-size: 4vh;
+	transform-origin: 50%;
+	transform: rotate(-1deg);
+	line-height: 1;
+	margin-top: 0.25rem;
+}
+
+.home .home-text--text-7 {
+	display: block;
+	font-size: 11vh;
+	transform-origin: 50%;
+	transform: rotate(-1deg);
+	line-height: 1;
+	margin-top: 0.25rem;
+}
+
+.home .home-text--text-8 {
+	color: #db6063;
 }

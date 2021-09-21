@@ -637,3 +637,18 @@ function twentytwentyone_add_ie_class() {
 	<?php
 }
 add_action( 'wp_footer', 'twentytwentyone_add_ie_class' );
+
+function my_custom_sidebar() {
+	register_sidebar(
+		array (
+			'name' => __( 'Social icon Area', 'your-theme-domain' ),
+			'id' => 'custom-side-bar',
+			'description' => __( 'This is the custom sidebar that you registered using the code snippet. You can change this text by editing this section in the code.', 'your-theme-domain' ),
+			'before_widget' => '<div class="social-icon-container">',
+			'after_widget' => "</div>",
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>',
+		)
+	);
+}
+add_action( 'widgets_init', 'my_custom_sidebar' );

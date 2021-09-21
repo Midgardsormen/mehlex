@@ -1,16 +1,56 @@
-
+.footer-menu{
+	overflow: hidden;
+	position: relative;
+	&::after,
+	&::before {
+	  content: "";
+	  display: block;
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	  width: 15px;
+	  height: 100%;
+	  z-index: 10;
+	  background: rgb(255, 255, 255);
+	  background: linear-gradient(
+		90deg,
+		rgba(255, 255, 255, 0) 0%,
+		rgb(255, 255, 255) 52%,
+		rgba(255, 255, 255, 1) 100%
+	  );
+	}
+	&::before {
+	  left: 0;
+	  right: auto;
+	  background: rgb(255, 255, 255);
+	  background: linear-gradient(
+		90deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(255, 255, 255, 1) 52%,
+		rgba(255, 255, 255, 0) 100%
+	  );
+	}
+}
 .footer-navigation {
-	margin-top: calc(2 * var(--global--spacing-vertical));
-	margin-bottom: var(--global--spacing-vertical);
 	color: var(--footer--color-text);
 	font-size: var(--global--font-size-xs);
 	font-family: var(--footer--font-family);
+	margin: 0;
+	overflow-x: scroll;
+	width: 100%;
+	display: block;
+	padding-bottom: 0;
+	@include media(desktop) {
+		overflow-x: initial;
+		width: initial;
+	}
+	  
 }
 
 .footer-navigation-wrapper {
 	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+	text-align: right;
+    justify-content: space-between;
 	list-style: none;
 	padding-left: 0;
 
@@ -20,10 +60,10 @@
 		line-height: 3;
 
 		a {
-			padding: calc(1.25 * var(--primary-nav--padding)) var(--primary-nav--padding);
+			padding: 0 calc(1.25 * var(--primary-nav--padding)) 0;
 			transition: transform 0.1s ease;
 			color: var(--footer--color-link);
-
+			white-space: nowrap;
 			&:link,
 			&:visited,
 			&:active {

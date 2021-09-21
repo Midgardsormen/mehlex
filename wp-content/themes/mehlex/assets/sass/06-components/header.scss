@@ -29,6 +29,7 @@
 	width: 15vh;
 	.home &{
 		width: initial;
+		max-width: calc(100% - 210px);
 		@include media(mobile) {
 			width: 25vh;
 			position: fixed;
@@ -220,18 +221,7 @@
 			}
 		}
 
-		&:not(.has-logo) {
-
-			&.has-title-and-tagline {
-
-				.site-branding {
-					margin-right: 0;
-					max-width: calc(100% - 160px);
-				}
-			}
-		}
-
-		&:not(.has-menu) {
+	&:not(.has-menu) {
 			justify-content: center;
 		}
 	}

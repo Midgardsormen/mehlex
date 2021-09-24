@@ -18,10 +18,11 @@ ol {
 }
 
 ul {
-	list-style-type: disc;
+	list-style-type: none;
+
 
 	ul {
-		list-style-type: circle;
+		list-style:none;
 	}
 }
 

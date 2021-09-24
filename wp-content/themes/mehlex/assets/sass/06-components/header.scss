@@ -5,36 +5,42 @@
 	align-items: flex-start;
 	flex-wrap: wrap;
 	row-gap: var(--global--spacing-vertical); // Add space in case the menu wraps below the site branding.
-
+	justify-content: center;
 	.wp-custom-logo & {
 		align-items: center;
 	}
 
 	@include media(mobile) {
+		justify-content: initial;
 		padding-top: calc(var(--global--spacing-vertical) / 0.75); // 40px
-	}
-
-	@include media(desktop) {
-		padding-top: calc(2.4 * var(--global--spacing-vertical)); // 60px
 	}
 }
 
 // Site branding
 .site-branding {
 	color: var(--branding--color-text);
-	margin-right: 140px;
+	margin-right: 0;
 	position: relative;
 	text-align: center;
 	z-index: 2;
 	width: 15vh;
+	min-width: 130px;
+	@include media(mobile) {
+		max-width: 140px;
+		margin-right: 140px;
+		position: fixed;
+		left: 50px;	
+	}
+	@include media(desktop) {
+		left: 130px;	
+	}
 	.home &{
 		width: initial;
 		max-width: calc(100% - 210px);
 		@include media(mobile) {
 			width: 25vh;
-			position: fixed;
 			top: 50%;
-			left: 0;
+			
 			transform: translate(0, -50%);
 		}
 		@include media(desktop) {

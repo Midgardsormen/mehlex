@@ -1,7 +1,7 @@
 .singular .entry-header {
-	border-bottom: 3px solid var(--global--color-border);
-	padding-bottom: calc(2 * var(--global--spacing-vertical));
-	margin-bottom: calc(3 * var(--global--spacing-vertical));
+	padding-top: calc(0.5 * var(--global--spacing-vertical));
+	padding-bottom: calc(0 * var(--global--spacing-vertical));
+	margin-bottom: calc(0.25 * var(--global--spacing-vertical));
 }
 
 .home .entry-header {

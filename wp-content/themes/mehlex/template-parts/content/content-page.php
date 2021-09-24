@@ -26,18 +26,35 @@
 
 	<div class="entry-content">
 		<?php
-		the_content();
+			$rightSide = get_field('images_colonne_de_droite');
+			if( $rightSide['image_1'] || $rightSide['image_2'] ): ?>
+		<div class="entry-content__left-side">
+		<?php else: ?>
+		<div class="entry-content__left-side entry-content__left-side--100p">
+		<?php endif; ?>
+			<?php
+			the_content();
 
-		wp_link_pages(
-			array(
-				'before'   => '<nav class="page-links" aria-label="' . esc_attr__( 'Page', 'twentytwentyone' ) . '">',
-				'after'    => '</nav>',
-				/* translators: %: Page number. */
-				'pagelink' => esc_html__( 'Page %', 'twentytwentyone' ),
-			)
-		);
-		?>
+			wp_link_pages(
+				array(
+					'before'   => '<nav class="page-links" aria-label="' . esc_attr__( 'Page', 'twentytwentyone' ) . '">',
+					'after'    => '</nav>',
+					/* translators: %: Page number. */
+					'pagelink' => esc_html__( 'Page %', 'twentytwentyone' ),
+				)
+			);
+			?>
+		</div>
+		<?php
+		$rightSide = get_field('images_colonne_de_droite');
+		if( $rightSide['image_1'] || $rightSide['image_2'] ): ?>
+			<aside class="entry-content__right-side">
+				<div class="entry-content__img-container entry-content__img-container--small entry-content__img-container--left"><img class="entry-content__right-img" src="<?php echo esc_url( $rightSide['image_1']['url'] ); ?>" alt="<?php echo esc_attr( $rightSide['image_1']['alt'] ); ?>" /></div>
+				<div class="entry-content__img-container entry-content__img-container--medium entry-content__img-container--right"><img class="entry-content__right-img" src="<?php echo esc_url( $rightSide['image_2']['url'] ); ?>" alt="<?php echo esc_attr( $rightSide['image_2']['alt'] ); ?>" /></div>
+			</aside>
+		<?php endif; ?>
 	</div><!-- .entry-content -->
+
 
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer default-max-width">

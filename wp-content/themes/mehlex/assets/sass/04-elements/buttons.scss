@@ -1,0 +1,19 @@
+.wp-block-buttons {
+display: block;
+text-align: right;
+    .wp-block-button{
+        border-radius: 8px;
+        background-color: var(--global--color-red);
+        height: 36px;
+        a{
+            font-size: 1rem;
+            font-family: "Raleway";
+            color: var(--global--color-white);
+            font-weight: 600;
+            line-height: 1.2;
+            text-align: center;
+        }
+    }
+  }
+
+  

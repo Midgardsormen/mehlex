@@ -23,8 +23,10 @@
 		font-weight: var(--primary-nav--font-weight-button);
 		background-color: transparent;
 		border: none;
-		color: var(--primary-nav--color-link);
-
+		color: var(--global--color-white);
+		@include media(mobile) {
+			color: var(--primary-nav--color-link);
+		}
 		.dropdown-icon {
 			display: flex;
 			align-items: center;
@@ -132,11 +134,11 @@
 
 	// Mobile menu open
 	.primary-navigation-open & {
-
+		
 		@include media(mobile-only) {
 			width: 100%;
 			position: fixed;
-			z-index: 2; // To be greater than the cover block and embeds.
+			z-index: 22; // To be greater than the cover block and embeds.
 		}
 
 		> .primary-menu-container {
@@ -230,7 +232,7 @@
 		.sub-menu-toggle {
 			display: flex;
 			height: calc(2 * var(--primary-nav--padding) + 1.15em + 1px);
-			width: 44px;
+			width: 35px;
 			padding: 0;
 			justify-content: center;
 			align-items: center;
@@ -288,27 +290,14 @@
 				padding-top: 3px;
 				transition: all 0.5s ease;
 				z-index: 88888;
-
-				&:before,
-				&:after {
-					content: "";
-					display: block;
-					position: absolute;
-					width: 0;
-					top: -10px;
-					left: var(--global--spacing-horizontal);
-					border-style: solid;
-					border-color: var(--primary-nav--border-color) transparent;
-					border-width: 0 7px 10px 7px;
-				}
-
-				&:after {
-					top: -9px;
-					border-color: var(--global--color-background) transparent;
-				}
-
 				li {
-					background: var(--global--color-background);
+					a{
+						&:hover,
+						&:link,
+						&:visited {
+							color: var(--global--color-white);
+						}
+					}
 				}
 
 				&.submenu-reposition-left {
@@ -378,7 +367,7 @@
 					padding-right: var(--primary-nav--padding);
 
 					+ .sub-menu-toggle {
-						margin-left: calc(5px - var(--primary-nav--padding));
+						margin-left: calc(-7px - var(--primary-nav--padding));
 					}
 				}
 			}
@@ -408,7 +397,7 @@
 		&:hover,
 		&:link,
 		&:visited {
-			color: var(--primary-nav--color-link-hover);
+			color: var(--primary-nav--color-link);
 		}
 
 		&:hover {
@@ -441,7 +430,8 @@
 		padding: 0;
 		list-style: none;
 		margin-left: var(--primary-nav--padding);
-		border: 1px solid var(--primary-nav--border-color);
+		background-color: var(--global--color-blue);
+
 
 		.sub-menu {
 			border: none;
@@ -467,7 +457,7 @@
 			}
 
 			> a {
-				padding: calc(1.25 * var(--primary-nav--padding)) var(--primary-nav--padding);
+				padding: calc(0.5 * var(--primary-nav--padding)) var(--primary-nav--padding);
 				display: block;
 				font-size: var(--primary-nav--font-size-sub-menu-mobile);
 				font-style: var(--primary-nav--font-style-sub-menu-mobile);

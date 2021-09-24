@@ -11,7 +11,6 @@
  * Top Level Wrappers (header, main, footer)
  * - Set vertical padding and horizontal margins
  */
-.site-main,
 .widget-area,
 .site-footer {
 	padding-top: var(--global--spacing-vertical);
@@ -19,11 +18,22 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+.site-main{
+	padding-bottom: var(--global--spacing-vertical);
+	margin-left: auto;
+	margin-right: auto;
+	@include media(mobile) {
+		padding-top: var(--global--spacing-vertical);
+	}
+}
 
 .site-header {
 	padding-top: calc(0.75 * var(--global--spacing-vertical));
 	margin-left: auto;
 	margin-right: auto;
+	@include media(mobile) {
+		margin-right: calc(1.25 * var(--primary-nav--padding));
+	}
 }
 
 /**
@@ -69,7 +79,6 @@
  * Block & non-gutenberg content wrappers
  * - Set margins
  */
-.entry-header,
 .post-thumbnail,
 .entry-content,
 .entry-footer,
@@ -79,7 +88,11 @@
 	margin-bottom: var(--global--spacing-vertical);
 	margin-left: auto;
 }
-
+.entry-header{
+	margin-top: var(--global--spacing-vertical);
+	margin-right: auto;
+	margin-bottom: var(--global--spacing-vertical);
+}
 /*
  * Block & non-gutenberg content wrapper children
  * - Sets spacing-vertical margin logic

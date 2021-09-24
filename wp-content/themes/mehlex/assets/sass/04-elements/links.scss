@@ -22,7 +22,7 @@ a:hover {
 
 	text-decoration: underline 1px dotted currentColor;
 	text-decoration-skip-ink: none;
-	background: rgba(255, 255, 255, .9);
+	color:var(--global--color-light-gray);
 
 	// Change text color when the body background is dark.
 	.is-dark-theme & {

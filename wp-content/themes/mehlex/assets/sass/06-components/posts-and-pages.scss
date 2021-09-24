@@ -22,3 +22,35 @@
 		}
 	}
 }
+.product-list{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-left: 0;margin-left: 0;
+	&__item{
+		text-align: center;
+		width: 100%;
+		@include media(desktop){
+			width: 50%;
+			
+		}
+		@include media(wide){
+			width: 33.33%;
+		}
+		padding: 2rem;
+		text-align: center;
+		box-sizing: border-box;
+	}
+	&__item-link{
+		text-decoration: none;
+	}
+	&__item-image{
+		max-width: 100%;
+	}
+	&__item-img{
+		width: 100%;
+		height: auto;
+		max-width: 100%;
+	}
+}

@@ -652,3 +652,65 @@ function my_custom_sidebar() {
 	);
 }
 add_action( 'widgets_init', 'my_custom_sidebar' );
+
+function wpm_custom_post_type() {
+
+	// On rentre les différentes dénominations de notre custom post type qui seront affichées dans l'administration
+	$labels = array(
+		// Le nom au pluriel
+		'name'                => _x( 'Nos produits', 'Post Type General Name'),
+		// Le nom au singulier
+		'singular_name'       => _x( 'Produit', 'Post Type Singular Name'),
+		// Le libellé affiché dans le menu
+		'menu_name'           => __( 'Nos produits'),
+		// Les différents libellés de l'administration
+		'all_items'           => __( 'Tous les produits'),
+		'view_item'           => __( 'Voir les produits'),
+		'add_new_item'        => __( 'Ajouter un produit'),
+		'add_new'             => __( 'Ajouter'),
+		'edit_item'           => __( 'Editer le produit'),
+		'update_item'         => __( 'Modifier le produit'),
+		'search_items'        => __( 'Rechercher un produit'),
+		'not_found'           => __( 'Non trouvé'),
+		'not_found_in_trash'  => __( 'Non trouvé dans la corbeille'),
+	);
+	
+	// On peut définir ici d'autres options pour notre custom post type
+	
+	$args = array(
+		'label'               => __( 'Nos produits'),
+		'labels'              => $labels,
+		// On définit les options disponibles dans l'éditeur de notre custom post type ( un titre, un auteur...)
+		'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+		/* 
+		* Différentes options supplémentaires
+		*/
+		'show_in_rest' => true,
+		'hierarchical'        => false,
+		'public'              => true,
+		'has_archive'         => true,
+		'rewrite'			  => array( 'slug' => 'Nos produits'),
+
+	);
+	
+	// On enregistre notre custom post type qu'on nomme ici "produits" et ses arguments
+	register_post_type( 'produits', $args );
+
+}
+
+add_action( 'init', 'wpm_custom_post_type', 0 );
+
+/* Retirer les préfixes sur les pages d'archives */
+function wpc_remove_archive_title_prefix() {
+	if (is_category()) {
+			$title = single_cat_title('', false);
+		} elseif (is_tag()) {
+			$title = single_tag_title('', false);
+		} elseif (is_author()) {
+			$title = '<span class="vcard">' . get_the_author() . '</span>' ;
+		} elseif (is_post_type_archive()) {
+			 $title = post_type_archive_title('', false);
+		}
+	return $title;
+}
+add_filter('get_the_archive_title', 'wpc_remove_archive_title_prefix');
